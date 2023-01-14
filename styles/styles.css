@@ -6,7 +6,7 @@
 :root {
     --blue: #1e90ff;
     --white: #ffffff;
-    --black: #000000;
+    --black: #131313;;
     --header-bg:  #ff900e1a;
     --anchor-text: #424242;
     --header-h3: #131313;
@@ -47,7 +47,7 @@
     text-align: center;
     font-size: 1rem;
 }
-.header-section button {
+.header-section button, .right-about-team button {
     background: var(--primary-bg);
     color: var(--white);
     border-radius: 8px;
@@ -75,23 +75,40 @@
     color: var(--anchor-text);
 }
 
-/* Brand Images design */
-.brand-img > img {
+.brand-img img, .team img, .features img, .sponser-img-container img  {
     width: 100%;
 }
 /* Team */
 .team {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    gap: 30px;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
 }
-.team img, .features img, .sponser-img-container img  {
-    width: 100%;
-}
+
 .team-img-first-row, .team-img-second-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 2em;
+    column-gap: 0.7rem;
+    gap: 20px;
+}
+.right-about-team h4 {
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.differ-color-1 {
+    color: var(--header-p);
+}
+.differ-color-2 {
+    color: var(--primary-bg);
+}
+.right-about-team p {
+    color: var(--header-p);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /* features image fluid with team image */
