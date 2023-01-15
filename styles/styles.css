@@ -203,10 +203,13 @@
     padding: 20px 5px;
     gap: .4rem;
     flex: 1 1 0px;
+    transition: transform 0.3s;
     /* width: 0; */
 }
 .box:hover {
     background: rgb(246, 206, 206);
+    cursor: pointer;
+    transform: scale(1.2)
 }
 .boxes img {
     width: 45px;

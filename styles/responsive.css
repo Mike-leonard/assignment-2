@@ -13,12 +13,39 @@
     }
     .team {
         display: block;
-    }  
+    }
+    .team-img-first-row, .team-img-second-row {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .right-about-team h4 {
+        font-size: 1.8rem;
+    }
+    /* Feature */
+    .feature-body {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .button-wrapper {
+        margin-left: 0;
+    }
+    .button-wrapper > button {
+        position: relative;
+        top: 1.5rem;
+    }
+
     /* Fact down by down */
+    .some-facts h3 { 
+        text-align: center;
+    }
+    .fact-txt {
+        width: 100%;
+        text-align: center;
+    }
     .boxes { 
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 40px;
     }
 
     .sponser-img-container { 
