@@ -15,14 +15,13 @@
   }
 /* Section Shrining css */
 .header-section, .main, .footer {
-    width: 85%;
-    /* border: 1px solid black; */
-    
+    width: 85%; 
     margin: 0 auto;
 }
 /* Header Design */
 .header {
     background: var(--header-bg);
+    padding-top: 0.8rem;
     padding-bottom: 2rem;
 }
 .brading-text {
@@ -33,7 +32,7 @@
     margin: 2.5rem auto;
 }
 .header-section h3 {
-    font-size: 2rem;
+    font-size: 1.55rem;
     color: var(--header-h3);
 }
 .header-section h1 {
@@ -181,7 +180,7 @@
     color: var(--black);
     margin-bottom: 0.5rem;
 }
-.some-facts p {
+.fact-txt {
     width: 65%;
     color: var(--header-p);
     font-size: .8rem;
@@ -189,23 +188,129 @@
 .boxes {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 80px;
     margin-top: 3rem;
     margin-bottom: 4rem;
 }
 .box {
-    width: 100px;
-    height: 100px;
-    border: 1px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 20px 5px;
+    gap: .4rem;
+    flex: 1 1 0px;
+    width: 0;
+    /*  reminder: use any design while hovering*/
+
+}
+.boxes img {
+    width: 45px;
+    height: 45px;
+}
+.boxes h5 {
+    font-size: 2.5rem;
+    color: var(--anchor-text);
+}
+.boxes p {
+    color: var(--header-p);
+    font-size: 0.8rem;
 }
 
+
 /* Sponser Sections */
+.sponsers h3 {
+    text-align: center;
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.sponsers p {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2rem;
+}
 .sponser-img-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
-    gap: 20px;
+    gap: 5rem;
+
 }
+.sponser-img-container img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+/* Contact Section */
+.contact-us {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.contact-us h3 {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--black);
+ }
+.contact-us p {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--header-p);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 15px 10px;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.paralal-inpt {
+    display: flex;
+    justify-content: space-between;
+}
+input[type="email"], input[type="number"]  {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 15px 10px;
+    border: 0;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+textarea {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 15px 10px;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+input[type="button"] {
+    background: var(--primary-bg);
+    color: var(--white);
+    border-radius: 4px;
+    padding: 15px 30px;
+    border: none;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+ }
+
+input::placeholder, textarea::placeholder { 
+    color: var(--white);
+  }
 
 /* Footer section */
 .footer {
