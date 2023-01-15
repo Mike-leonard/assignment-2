@@ -91,8 +91,8 @@
 .team-img-first-row, .team-img-second-row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 0.7rem;
-    gap: 20px;
+    gap: 1rem;
+    padding: 0.5rem 0;
 }
 .right-about-team h4 {
     font-size: 2.5rem;
@@ -111,17 +111,18 @@
 }
 
 /* features image fluid with team image */
-
+.features {
+    position: relative;
+}
 .feature-body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    gap: 150px;
 }
 .button-wrapper {
     display: flex;
     justify-content: center;
-    
-
+    margin-left: 13%;
 }
 .button-wrapper > button {
     background: var(--primary-bg);
@@ -131,6 +132,7 @@
     border: none;
     font-size: 1rem;
     position: absolute;
+    bottom: 0;
     
     
 }
@@ -202,8 +204,9 @@
     gap: .4rem;
     flex: 1 1 0px;
     width: 0;
-    /*  reminder: use any design while hovering*/
-
+}
+.box:hover {
+    background: rgb(246, 206, 206);
 }
 .boxes img {
     width: 45px;
@@ -231,6 +234,7 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 2rem;
+    color: var(--header-p);
 }
 .sponser-img-container {
     display: grid;
@@ -249,7 +253,7 @@
     margin-bottom: 2rem;
 }
 .contact-us h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     color: var(--black);
  }
@@ -277,17 +281,17 @@ input[type="text"] {
 }
 .paralal-inpt {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
 }
 input[type="email"], input[type="number"]  {
     background-color: var(--blue);
     color: var(--white);
     padding: 15px 10px;
     border: 0;
-    display: inline-block;
     font-size: 1rem;
     border-radius: 4px;
     margin-bottom: 1rem;
+    flex: 1;
 }
 textarea {
     background-color: var(--blue);
