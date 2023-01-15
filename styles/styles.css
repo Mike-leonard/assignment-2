@@ -13,6 +13,10 @@
     --header-p: #727272;
     --primary-bg: #FF900E;
   }
+  body {
+    font-family: 'Indie Flower', cursive;
+font-family: 'Work Sans', sans-serif;
+  }
 /* Section Shrining css */
 .header-section, .main, .footer {
     width: 85%; 
